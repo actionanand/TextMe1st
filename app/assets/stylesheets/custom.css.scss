@@ -34,5 +34,85 @@ $navbar-default-bg: limegreen;
   
 }
 
+.center{
+  text-align: center;
+  
+}
+
+.jumbotron{
+  background-image: asset-url('green_leaf.jpg');
+  background-size: cover;
+  height: 570px;
+  
+}
+
+#img1{
+	background: asset-url('rose_1.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+#img1 h1 {
+	font-size: 100px;
+	font-family: Anton, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	-webkit-transition: text-shadow 1s ease;
+	text-shadow: 0 0 1px rgba(0,0,0,.1);
+	margin: 0;
+	padding: 0;
+}
+
+.footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+.footer a:hover{
+  color: forestgreen;
+  
+}
+
+.footer small{
+  float: left;
+  
+}
+
+.footer ul{
+  float: right;
+  list-style: none;
+  
+}
+
+.footer ul li{
+  float: left;
+  margin-left: 15px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
