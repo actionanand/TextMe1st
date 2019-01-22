@@ -10,7 +10,6 @@ $navbar-default-bg: limegreen;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
-  
 }
 
 #logo:hover{
@@ -19,31 +18,26 @@ $navbar-default-bg: limegreen;
   text-transform: capitalize;
   letter-spacing: 1.6px;
   font-weight: bold;
-  
 }
   
 .navbar-nav > li > .dropdown-menu {
   
   background-color: limegreen;
-  
 }
 
 .navbar-nav > li > .dropdown-menu :hover {
   
   background-color: forestgreen;
-  
 }
 
 .center{
   text-align: center;
-  
 }
 
 .jumbotron{
   background-image: asset-url('green_leaf.jpg');
   background-size: cover;
   height: 570px;
-  
 }
 
 #img1{
@@ -75,24 +69,20 @@ $navbar-default-bg: limegreen;
 
 .footer a:hover{
   color: forestgreen;
-  
 }
 
 .footer small{
   float: left;
-  
 }
 
 .footer ul{
   float: right;
   list-style: none;
-  
 }
 
 .footer ul li{
   float: left;
   margin-left: 15px;
-  
 }
 
 .article-action{
@@ -114,23 +104,23 @@ $navbar-default-bg: limegreen;
 .article-title{
   font-weight: bold;
   fint-size: 1.5em;
-  
 }
 
 .article-body{
   border-top: 1px solid #b3ffb3;
   padding-top: 15px;
   padding-bottom: 15px;
-  
 }
 
 .article-meta-details{
   border-top: 1px solid #b3ffb3 ;
   margin-top: 15px;
-  
 }
 
-
+.listing{
+  list-style: none;
+  padding-left: 0;
+}
 
 
 
