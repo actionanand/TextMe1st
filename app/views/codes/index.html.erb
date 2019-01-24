@@ -1,0 +1,29 @@
+<h1 class="center", id="img1">SS7 Code Converter</h1>
+<div class="well center">
+  <div class="row">
+    <div class="col-xs-12">
+      <%= form_for(:code, url: {action: :new },method: :get, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <%= text_field_tag :a %>
+          </div>
+        </div>
+        <div class="form-group">  
+          <div class="col-sm-12 ss7-select">
+            <%= select_tag :operation, options_for_select([['Decimal to Binary', :d2b], ['Decimal to hexa', :d2h],['Decimal to Octal', :d2o], ['Decimal to Point code 7-7', :d2p], ['Point code 7-7 to Decimal', :p2d], ['Binary to Decimal', :b2d], ['Octal to Decimal', :o2d], ['Hexa to Decimal', :h2d]]) %>
+          </div>
+        </div>
+        <div class="form-group">  
+          <div class="col-sm-12">
+            <%= f.submit "Convert", class: "btn btn-xs-2 btn-success" %>
+          </div>
+        </div>
+      <% end %>
+      <% unless @result.nil? %>
+        <div class="ss7-style">
+        <h3><%=@names%> of <%=params[:a]%> is <label><%= @result %> </label></h3>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
