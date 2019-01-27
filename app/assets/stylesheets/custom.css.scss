@@ -1,4 +1,4 @@
-$navbar-default-bg: limegreen;
+$navbar-default-bg: #073B15;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -22,7 +22,7 @@ $navbar-default-bg: limegreen;
   
 .navbar-nav > li > .dropdown-menu {
   
-  background-color: limegreen;
+  background-color: #ccffcc;
 }
 
 .navbar-nav > li > .dropdown-menu :hover {
@@ -35,7 +35,7 @@ $navbar-default-bg: limegreen;
 }
 
 .jumbotron{
-  background-image: asset-url('green_leaf.jpg');
+  background-image: asset-url('koi_fish.png');
   background-size: cover;
   height: 570px;
 }
