@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   get 'ss7', to: 'codes#index'
   resources :codes, except: [:index]
+  resources :categories, except: [:destroy]
 end
