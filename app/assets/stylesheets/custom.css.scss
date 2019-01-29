@@ -130,7 +130,17 @@ $navbar-default-bg: #073B15;
    background-color: limegreen;
 }
 
+.badge{
+  background-color: #cef6f5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
 
+.badge :hover{
+  background-color: #7fff00;
+  text-decoration: none;
+}
 
 
 
