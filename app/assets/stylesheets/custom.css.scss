@@ -71,6 +71,20 @@ $navbar-default-bg: #073B15;
   color: forestgreen;
 }
 
+.btn-xlarge{
+  font-size: 1.7em;
+  background-color: #073B15;
+  border-color: #073B15;
+}
+
+.btn-ar:hover{
+  background-color: #073B15;
+  border-radius: 5px;
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 3px 0 0 green;
+}
+
 .footer small{
   float: left;
 }
