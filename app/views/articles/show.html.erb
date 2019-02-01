@@ -16,6 +16,11 @@
   <%end%>  
   <h4 class="center description"><strong>Description:</strong></h4>
   <%=simple_format(@article.description)%>
+  <div class="row">
+    <div class="col-md-12">
+      Created: <%= time_ago_in_words(@article.created_at) %> ago and Last updated was : <%= time_ago_in_words(@article.updated_at) %> ago!
+    </div>
+  </div>
   <%if @article.categories.any?%>
     <p>Categories: <%= render @article.categories%></p>
   <%end%>
