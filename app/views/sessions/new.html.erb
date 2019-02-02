@@ -16,7 +16,10 @@
       <%= f.label :password %>
     </div>
     <div class="col-sm-8">
-      <%= f.password_field :password, class: "form-control", autocomplete: "off"%>
+      <%= f.password_field :password, class: "form-control pwd", placeholder: "Enter the Password", autocomplete: "off"%>
+      <span class="input-group-btn">
+        <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
+      </span> 
     </div>
   </div>
   <div class="form-group">
