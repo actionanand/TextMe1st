@@ -24,7 +24,7 @@ class ArticlesController < ApplicationController
   end
   
   def show
-    
+    @comments = @article.comments.paginate(page: params[:page], per_page: 5)
   end
   
   def edit
