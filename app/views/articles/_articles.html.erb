@@ -9,9 +9,10 @@
           <%=truncate(article.description, length: 100)%>
           <div class="article-meta-details">
             <small>
-              created by:<%= article.user.username if article.user %>,
+              created by: <%= article.user.username.capitalize if article.user %>,
               <%=time_ago_in_words(article.created_at)%> ago,
               Last updated: <%=time_ago_in_words(article.updated_at)%> ago
+               | <%=pluralize(article.comments.count, "Comment")%>
             </small>
           </div>
         </div>
