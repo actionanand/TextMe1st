@@ -28,6 +28,18 @@
             data: {confirm: "Are you sure to delete this Article?"}, class: "btn btn-xs btn-danger"%>
           </div>
         <%end%>
+        
+        <div class="row">
+          <div class="pull-right liking">
+            <%= link_to like_article_path(article, like: true), method: :post do %>
+              <i class="glyphicon glyphicon-thumbs-up"></i> 
+            <% end %> <%= article.thumbs_up_total %> || 
+            <%= link_to like_article_path(article, like: false), method: :post do %>
+              <i class="glyphicon glyphicon-thumbs-down"></i>
+            <% end %> <%= article.thumbs_down_total %>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>

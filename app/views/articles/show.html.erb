@@ -7,7 +7,7 @@
           <li>created by:</li>
           <li><%=link_to gravatar_for(@article.user), user_path(@article.user)%></li>
           <li class="article-title">
-            <%=link_to @article.user.username, user_path(@article.user)%>
+            <%=link_to @article.user.username.capitalize, user_path(@article.user)%>
           </li>
           <li><small><%=pluralize(@article.user.articles.count, "article") if @article.user.articles%></small></li>
         </div>
@@ -31,6 +31,17 @@
       data: {confirm: "Are you sure to delete this Article?"}, class: "btn btn-xs btn-danger"%>
     <%end%>
     <%=link_to "View all Articles", articles_path, class: "btn btn-xs btn-success"%>
+  </div>
+</div>
+
+<div class="row liking">
+  <div class="row col-md-8 col-md-offset-2">
+    <%= link_to like_article_path(@article, like: true), method: :post do %>
+      <i class="glyphicon glyphicon-thumbs-up"></i> 
+    <% end %> <%= @article.thumbs_up_total %> ||
+    <%= link_to like_article_path(@article, like: false), method: :post do %>
+      <i class="glyphicon glyphicon-thumbs-down"></i> 
+    <% end %><%= @article.thumbs_down_total %>
   </div>
 </div>
 
