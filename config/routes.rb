@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get 'ss7', to: 'codes#index'
   resources :codes, except: [:index]
   resources :categories, except: [:destroy]
-end
+  mount ActionCable.server => '/cable'
+end 
