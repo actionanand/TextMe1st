@@ -1,1 +1,1 @@
-$redis = Redis.new(url: ENV["REDIS_URL --app textme1st"]) if Rails.env.production?
+$redis = Redis.new(url: ENV["REDIS_URL"]) if Rails.env.production?
