@@ -14,6 +14,6 @@ $( document ).ready(function() {
       $pwd.attr('type', 'password');
     }
     
-  });
+  })
 
 });

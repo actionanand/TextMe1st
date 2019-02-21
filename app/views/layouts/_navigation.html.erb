@@ -54,7 +54,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <%if logged_in?%>
-          <li><%= link_to "Log out", logout_path, method: :delete %></li>
+          <li><%= link_to "Chat Room", chat_path%></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username.capitalize%>'s Profile <%="(Admin)" if current_user.admin?%> <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -62,7 +62,7 @@
               <li><%=link_to "View your profile", user_path(current_user)%></li>
               <li><a href="#"></a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Beta Link</a></li>
+              <li><%= link_to "Log out", logout_path, method: :delete %></li>
             </ul>
           </li>
         <%else%>

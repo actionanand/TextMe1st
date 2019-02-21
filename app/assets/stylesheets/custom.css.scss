@@ -168,8 +168,42 @@ $navbar-default-bg: #073B15;
   padding-right: 10px;
 }
 
+.center-block{
+  float: none;
+}
 
+.chatcontainer{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 150px;
+  width: 80;
+}
 
+.message-container{
+  .form-control{
+   float: left;
+   width: 80%;
+  }
+  .btn{
+    float: right;
+    position: relative;
+    height: 54px !important;
+    width: 18%;
+  }
+}
+
+.message{
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+.messages{
+  border: 1px solid #ccffcc;
+  height: 16em;
+  position: relative;
+  overflow: auto;
+}
 
 
 
