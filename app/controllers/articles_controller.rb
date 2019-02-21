@@ -54,7 +54,7 @@ class ArticlesController < ApplicationController
       flash[:success] = "You've liked this article"
       redirect_to :back
     else
-      flash[:warning] = "You can only like/dislike a recipe once"
+      flash[:warning] = "You can only like/dislike an article once"
       redirect_to :back
     end
   end
