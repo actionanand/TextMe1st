@@ -207,7 +207,18 @@ $navbar-default-bg: #073B15;
 
 ul.nav a:hover { color: #fff !important; }
 
-
+.eye-btn{
+  .form-control{
+   float: left;
+   width: 96%;
+  }
+  .btn{
+    float: right;
+    position: relative;
+    height: 35px !important;
+    width: 4%;
+  }
+}
 
 
 
