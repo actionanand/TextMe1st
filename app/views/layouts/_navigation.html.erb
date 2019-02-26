@@ -23,10 +23,10 @@
               <li><%=link_to "New Article", new_article_path%></li>
               <li><%=link_to "All Articles",  articles_path %></li>
               <li><%=link_to "view Texterz", users_path%></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Beta Test1</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Beta function</a></li>
+              <!--<li role="separator" class="divider"></li>-->
+              <!--<li><a href="#">Beta Test1</a></li>-->
+              <!--<li role="separator" class="divider"></li>-->
+              <!--<li><a href="#">Beta function</a></li>-->
             </ul>
           </li>
         <%else%>
@@ -54,9 +54,13 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <%if logged_in?%>
-          <li><%= link_to "Chat Room", chat_path%></li>
+          <li>
+            <%= link_to chat_path do %>
+              <i class="glyphicon glyphicon-comment"></i> Chat Room
+            <% end %>
+          </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.username.capitalize%>'s Profile <%="(Admin)" if current_user.admin?%> <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='glyphicon glyphicon-user'></i><%=current_user.username.capitalize%><%="(Admin)" if current_user.admin?%> <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><%=link_to "Edit your profile", edit_user_path(current_user)%></li>
               <li><%=link_to "View your profile", user_path(current_user)%></li>
